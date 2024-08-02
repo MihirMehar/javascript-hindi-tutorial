@@ -39,3 +39,29 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+/*stack and heap memory concept ,i.e all primitive datatype 
+are stored in stack memory mean copy of varibale is provided and changes are done in copy not original
+*/
+
+let myfunction = "Hello World";
+
+let anotherfunction =myFunction
+anotherfunction="Hello Good Morning"
+console.log(myFunction);
+console.log(anotherfunction);
+
+
+//similar non primitive data types are stored in heap i.e refernce change
+let userOne={
+    email:"mihir@gmail.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="mihir@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
