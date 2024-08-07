@@ -50,6 +50,21 @@ function one(){
 
 // one()
 
+//exapmle 2
+function User(){ // function user create
+
+    const userName = 'Mihir'; // variable declare
+
+    function isLoggedIn(){ // nested or another function is created
+        const isLoggedOut = true
+        console.log(userName);
+    }
+    // console.log(isLoggedOut);
+
+    isLoggedIn()
+}
+User()
+
 if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
